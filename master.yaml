@@ -1,0 +1,15 @@
+---
+#learning roles
+
+
+
+- hosts: devlinux
+  user: velocity
+  connection: ssh
+  become: yes
+  gather_facts: yes
+
+
+  roles:
+    - test-role
+    - install-role

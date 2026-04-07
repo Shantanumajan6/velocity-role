@@ -1,0 +1,7 @@
+- name: install
+  yum:
+    name:
+      - "{{pkg1}}"
+      - "{{pkg2}}"
+      - "{{pkg3}}"
+    state: present
